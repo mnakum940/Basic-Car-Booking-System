@@ -3,14 +3,14 @@ import mysql.connector
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="mnakum940",
+  password="ur password",
   database="school"
 )
 
 
 c = mydb.cursor()
-#c.execute("CREATE TABLE appointments ( name VARCHAR(30), age INT(4),gender VARCHAR(4), location VARCHAR(20), time VARCHAR(10), phone INT(14))")
-ids = []
+#use the below line for the first time only than apply # again
+c.execute("CREATE TABLE appointments ( name VARCHAR(30), age INT(4),gender VARCHAR(4), location VARCHAR(20), time VARCHAR(10), phone INT(14))")
 
 class Application:
     def __init__(self):
